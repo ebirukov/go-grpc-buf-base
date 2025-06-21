@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package probe.v1;
+
+option go_package="github.com/go-grpc-buf-base/pkg/grpc/probe/v1;probe_v1";
+
+service ProbeService {
+  rpc Echo(EchoRequest) returns (EchoResponse);
+}
+
+message EchoRequest {}
+
+message EchoResponse {}
